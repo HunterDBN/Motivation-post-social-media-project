@@ -58,7 +58,7 @@ def main(day, live=False, only=None):
                    "dueAt": when.astimezone(ZoneInfo("UTC")).isoformat().replace("+00:00", "Z"),
                    "assets": [{"image": {"url": u}} for u in urls]}
             if platform == "facebook": inp["metadata"] = {"facebook": {"type": "post"}}
-            if platform == "instagram": inp["metadata"] = {"instagram": {"type": "carousel", "shouldShareToFeed": True}}
+            if platform == "instagram": inp["metadata"] = {"instagram": {"type": "carousel" if len(urls) > 1 else "post", "shouldShareToFeed": True}}
             r = gql(CREATE, {"input": inp})["createPost"]
             results[f"{d.name}/{platform}"] = r; print(d.name, platform, r)
     if live: (ROOT/"output"/day/"published.json").write_text(json.dumps(results, indent=1))
