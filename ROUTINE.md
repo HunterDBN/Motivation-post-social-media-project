@@ -1,6 +1,6 @@
 # Daily run (what the scheduled Claude session does)
 
-Runs once a day at 6:00 AM Pacific (America/Vancouver) and prepares *tomorrow's* posts,
+Runs once a day (currently 2:07 PM Pacific) (America/Vancouver) and prepares *tomorrow's* posts,
 so Hunter has all day to review them.
 
 1. Read `config.json` and `history.json`. Pick 3-4 themes not used in the last week
@@ -27,3 +27,7 @@ Never publish anything Hunter has not approved while review mode is on.
 - `manual_upload` (current): no posting key is available to scheduled runs, so after step 4 the run sends Hunter
   the slides and captions for each post (with the target time) and Hunter uploads them in Buffer / the apps. Skip step 5's publish call.
 - `buffer_api`: needs `BUFFER_API_KEY` in the run's environment and a public media URL. Not available yet.
+
+## Which day to prepare
+Prepare the FIRST date, starting from tomorrow (America/Vancouver), that has no `output/<date>/published.json`.
+Days already scheduled have that file, so never rebuild or re-schedule them (that would create duplicate posts in Buffer).
