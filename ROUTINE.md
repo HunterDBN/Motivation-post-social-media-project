@@ -19,7 +19,8 @@ so Hunter has all day to review them.
 
 Never publish anything Hunter has not approved while review mode is on.
 
-## Posting mode
+## Posting mode (current: buffer_api, scheduled into Buffer; nothing goes live before its slot, so Hunter can review/delete in Buffer)
+
 `config.json` -> `posting_mode`:
 - `manual_upload` (current): no posting key is available to scheduled runs, so after step 4 the run sends Hunter
   the slides and captions for each post (with the target time) and Hunter uploads them in Buffer / the apps. Skip step 5's publish call.
