@@ -57,6 +57,7 @@ def main(day, live=False, only=None):
             inp = {"channelId": cid, "text": text, "schedulingType": "automatic", "mode": "customScheduled",
                    "dueAt": when.astimezone(ZoneInfo("UTC")).isoformat().replace("+00:00", "Z"),
                    "assets": [{"image": {"url": u}} for u in urls]}
+            if platform == "facebook": inp["metadata"] = {"facebook": {"type": "post"}}
             r = gql(CREATE, {"input": inp})["createPost"]
             results[f"{d.name}/{platform}"] = r; print(d.name, platform, r)
     if live: (ROOT/"output"/day/"published.json").write_text(json.dumps(results, indent=1))
