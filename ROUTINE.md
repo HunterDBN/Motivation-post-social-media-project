@@ -32,7 +32,7 @@ Never publish anything Hunter has not approved while review mode is on.
 Run `python -m buddha_post.verify` first. Prepare the FIRST date, starting from tomorrow (America/Vancouver), whose Facebook count is below 4.
 If `content/<date>.json` already exists and its slides are in `output/<date>/`, do NOT rewrite it; just run `publish <date> --live`.
 `publish` is idempotent: it skips slots already in Buffer, so re-running only fills the missing ones.
-Buffer's free plan allows only 10 scheduled posts at once. If publish reports the limit, the remaining slots stay unscheduled and the next run retries them. Tell Hunter the plan limit is the cause.
+Buffer's free plan allows only 10 scheduled posts at once PER CHANNEL (Facebook, TikTok, Threads each). If publish reports the limit, the remaining slots stay unscheduled and the next run retries them. Tell Hunter the plan limit is the cause.
 Hunter views Buffer in Da Nang time (Asia/Ho_Chi_Minh), so `verify` checks every day in both timezones.
 
 ## Content style (Hunter, 2026-11-13)

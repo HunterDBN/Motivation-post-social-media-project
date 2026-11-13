@@ -20,11 +20,12 @@
   ],
   "publisher": "buffer",
   "buffer_channels": {
-    "instagram": "",
     "facebook": "6af6976c62b70b94b014b41d",
-    "tiktok": ""
+    "tiktok": "6af6aaae62b70b94b01633c2",
+    "threads": "6af6aa4962b70b94b0162ae4",
+    "instagram": ""
   },
   "media_base_url": "https://raw.githubusercontent.com/HunterDBN/Motivation-post-social-media-project/main/output",
   "posting_mode": "buffer_api",
-  "view_timezone": "Asia/Ho_Chi_Minh"
+  "view_timezone": "Asia/Manila"
 }

@@ -24,10 +24,10 @@ def main(days, tz=None):
         for e in res:
             n = e["node"]; t = datetime.fromisoformat(n["dueAt"].replace("Z", "+00:00")).astimezone(tz)
             if t.strftime("%Y-%m-%d") == d and n["status"] in ("scheduled", "sending", "sent"):
-                c[n["channelService"]] += 1; times.append(f'{t:%H:%M}/{len(n["assets"])}img')
+                c[n["channelService"]] += 1; times.append((n["channelService"], f'{t:%H:%M}/{len(n["assets"])}img'))
         for ch in [k for k, v in CFG["buffer_channels"].items() if v]:
             flag = "" if c[ch] >= 4 else "  <-- FEWER THAN 4"; ok &= c[ch] >= 4
-            print(f"{d} ({tz.key}) {ch}: {c[ch]} posts {sorted(times) if ch == 'facebook' else ''}{flag}")
+            print(f"{d} ({tz.key}) {ch}: {c[ch]} posts {sorted(x for c2, x in times if c2 == ch)}{flag}")
     sys.exit(0 if ok else 1)
 if __name__ == "__main__":
     days = sys.argv[1:] or [(datetime.now(TZ) + timedelta(days=i)).strftime("%Y-%m-%d") for i in (1, 2, 3)]

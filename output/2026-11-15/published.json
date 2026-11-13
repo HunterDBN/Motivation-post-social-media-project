@@ -1,0 +1,32 @@
+{
+ "post-1/tiktok": {
+  "post": {
+   "id": "6af6ab95da25c4db3e9c03d9",
+   "dueAt": "2026-11-15T15:00:00.000Z"
+  }
+ },
+ "post-1/threads": {
+  "post": {
+   "id": "6af6ab95da25c4db3e9c041c",
+   "dueAt": "2026-11-15T15:00:00.000Z"
+  }
+ },
+ "post-2/facebook": {
+  "post": {
+   "id": "6af6ab965ec1c9d5be6391e7",
+   "dueAt": "2026-11-15T19:00:00.000Z"
+  }
+ },
+ "post-2/tiktok": {
+  "post": {
+   "id": "6af6ab96e1d8eff610a52fe1",
+   "dueAt": "2026-11-15T19:00:00.000Z"
+  }
+ },
+ "post-2/threads": {
+  "post": {
+   "id": "6af6ab96c1a0010a5b019263",
+   "dueAt": "2026-11-15T19:00:00.000Z"
+  }
+ }
+}
