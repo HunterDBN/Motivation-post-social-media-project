@@ -1,0 +1,9 @@
+{
+  "timezone": "America/Vancouver",
+  "post_times": ["08:00", "12:00", "17:00", "20:00"],
+  "slides_per_post": 4,
+  "review_before_post": true,
+  "platforms": ["instagram", "facebook", "tiktok"],
+  "publisher": "ayrshare",
+  "hashtags": ["#motivation", "#personalgrowth", "#mindset", "#selfimprovement", "#mindfulness", "#innerpeace", "#dailyquotes", "#growthmindset"]
+}
