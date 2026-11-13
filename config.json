@@ -1,9 +1,28 @@
 {
   "timezone": "America/Vancouver",
-  "post_times": ["08:00", "12:00", "17:00", "20:00"],
+  "post_times": [
+    "08:00",
+    "12:00",
+    "17:00",
+    "20:00"
+  ],
   "slides_per_post": 4,
   "review_before_post": true,
-  "platforms": ["instagram", "facebook", "tiktok"],
-  "publisher": "ayrshare",
-  "hashtags": ["#motivation", "#personalgrowth", "#mindset", "#selfimprovement", "#mindfulness", "#innerpeace", "#dailyquotes", "#growthmindset"]
+  "hashtags": [
+    "#motivation",
+    "#personalgrowth",
+    "#mindset",
+    "#selfimprovement",
+    "#mindfulness",
+    "#innerpeace",
+    "#dailyquotes",
+    "#growthmindset"
+  ],
+  "publisher": "buffer",
+  "buffer_channels": {
+    "instagram": "",
+    "facebook": "",
+    "tiktok": ""
+  },
+  "media_base_url": "https://raw.githubusercontent.com/HunterDBN/Motivation-post-social-media-project/main/output"
 }
