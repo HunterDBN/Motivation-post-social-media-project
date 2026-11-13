@@ -25,5 +25,6 @@
     "tiktok": ""
   },
   "media_base_url": "https://raw.githubusercontent.com/HunterDBN/Motivation-post-social-media-project/main/output",
-  "posting_mode": "buffer_api"
+  "posting_mode": "buffer_api",
+  "view_timezone": "Asia/Ho_Chi_Minh"
 }

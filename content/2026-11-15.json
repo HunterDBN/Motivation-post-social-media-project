@@ -1,20 +1,40 @@
-{"posts": [
- {"theme": "courage",
-  "quotes": ["Courage usually doesn't feel brave. It feels like your hands shaking while you do it anyway.",
-             "You will never be fully certain. Choose the path you can live with, then walk it.",
-             "Every strong person you admire was once a beginner who didn't quit.",
-             "Fear is just a sign you're near something that matters."],
-  "caption": "You can be scared and still go. That's what courage actually is. 🔥\n\nTag someone who's been brave lately."},
- {"type": "single", "theme": "gratitude",
-  "quotes": ["Notice what is quietly going right today. It's more than you think."],
-  "caption": "Gratitude doesn't erase the hard days. It just shows you the light that's still there. 🌼\n\nWhat's one good thing from today?"},
- {"theme": "self-worth",
-  "quotes": ["You are not behind. You are on a path no one else has walked.",
-             "Stop shrinking to fit places you've already outgrown.",
-             "Your worth was never up for a vote. It was settled the day you arrived.",
-             "Treat yourself like someone you're responsible for loving."],
-  "caption": "Read this one slowly. You're exactly where you need to start. 🤍\n\nSend it to someone who forgets their worth."},
- {"type": "single", "theme": "rest",
-  "quotes": ["Rest is not a reward for finishing everything. It's part of how anything gets finished."],
-  "caption": "Permission to rest, granted. 🌙\n\nSave this for when you feel guilty for slowing down."}
-]}
+{
+ "posts": [
+  {
+   "theme": "self-mastery",
+   "quotes": [
+    "Mastering others is strength. Mastering yourself is true power.||Lao Tzu",
+    "Self-compassion builds resilience. Self-criticism just builds fear.",
+    "Talk to yourself like a friend you're trying to help.",
+    "Mistakes are data. Shame is just noise."
+   ],
+   "caption": "Real strength is quiet. 🌿\n\nLao Tzu, Tao Te Ching, chapter 33 (Mitchell translation; translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "becoming",
+   "quotes": [
+    "First say to yourself what you would be; and then do what you have to do.||Epictetus"
+   ],
+   "caption": "Decide who you're becoming. Then act like it. 🔥\n\nEpictetus, Discourses 3.23 (Long translation)."
+  },
+  {
+   "theme": "peace",
+   "quotes": [
+    "Hatred does not cease by hatred, but only by love; this is the eternal rule.||Dhammapada",
+    "Discomfort is the feeling of your brain learning something new.",
+    "Habits stick when they're tiny. Two minutes beats two hours you never start.",
+    "Connection calms the nervous system. Reach out before you feel ready."
+   ],
+   "caption": "Peace begins where the fighting stops. 🕊️\n\nDhammapada, verse 5 (Müller translation). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "enough",
+   "quotes": [
+    "Very little is needed to make a happy life; it is all within yourself, in your way of thinking.||Marcus Aurelius"
+   ],
+   "caption": "You already have more than you think. 🌼\n\nMarcus Aurelius, Meditations 7.67 (Long translation)."
+  }
+ ]
+}

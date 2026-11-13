@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "obstacles + fear",
+   "quotes": [
+    "The impediment to action advances action. What stands in the way becomes the way.||Marcus Aurelius",
+    "Avoiding what scares you teaches your brain it was dangerous.",
+    "Facing it in small steps teaches your brain you're safe.",
+    "Name the feeling out loud. Naming it takes some of its power."
+   ],
+   "caption": "What blocks you can become your path. 🧭\n\nMarcus Aurelius, Meditations 5.20 (Hays translation). Then the modern view: avoidance keeps fear alive, small exposures and naming feelings calm it. General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "integrity",
+   "quotes": [
+    "Waste no more time arguing what a good man should be. Be one.||Marcus Aurelius"
+   ],
+   "caption": "Stop debating it. Become it. 🌿\n\nMarcus Aurelius, Meditations 10.16 (Hays translation)."
+  },
+  {
+   "theme": "mind + body",
+   "quotes": [
+    "We suffer more often in imagination than in reality.||Seneca",
+    "You can't think your way out of a feeling your body still holds.",
+    "Slow your exhale. A calmer body gives you a clearer mind.",
+    "Rumination feels like problem-solving, but it keeps you stuck."
+   ],
+   "caption": "Most of our storms start in our heads. 🌊\n\nSeneca, Letters to Lucilius 13 (Gummere translation). Then what psychology adds about the body and rumination. General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "beginnings",
+   "quotes": [
+    "A journey of a thousand miles begins with a single step.||Lao Tzu"
+   ],
+   "caption": "Just take the step. 🥾\n\nLao Tzu, Tao Te Ching, chapter 64 (translations vary)."
+  }
+ ]
+}

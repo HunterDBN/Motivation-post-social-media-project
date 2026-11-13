@@ -1,40 +1,40 @@
 {
  "posts": [
   {
-   "theme": "growth feels uncomfortable",
+   "theme": "perspective",
    "quotes": [
-    "Growth rarely feels like growth while it's happening. Most of the time it just feels like being uncomfortable.",
-    "The path that scares you a little is usually the one that's meant for you.",
-    "You can't keep doing what you've always done and expect to feel something new. Change starts where comfort ends.",
-    "Be patient with the version of you that's still learning. They're doing the hard part so you don't have to later."
+    "People are disturbed not by things, but by the views they take of them.||Epictetus",
+    "The story you tell about what happened shapes how it feels.",
+    "A new story isn't denial. It's a more complete one.",
+    "You can't control the first thought. You can choose the second."
    ],
-   "caption": "Discomfort isn't a sign you're lost. It's usually a sign you're growing. 🌱\n\nSave this for the days that feel heavy."
+   "caption": "Same event, different story, different feeling. 🪞\n\nEpictetus, Enchiridion 5 (modernized from the Carter translation). Psychologists call the skill cognitive reframing. General psychology ideas, not medical advice."
   },
   {
    "type": "single",
-   "theme": "letting go",
+   "theme": "integrity",
    "quotes": [
-    "Some things leave your life so better things have room to arrive."
+    "If it is not right, do not do it; if it is not true, do not say it.||Marcus Aurelius"
    ],
-   "caption": "You're allowed to set it down. 🍃\n\nSend this to someone who needs to hear it today."
+   "caption": "A simple rule for a clean conscience. 🤍\n\nMarcus Aurelius, Meditations 12.17 (Long translation)."
   },
   {
-   "theme": "small daily steps",
+   "theme": "time + growth",
    "quotes": [
-    "Nobody notices the quiet mornings you showed up anyway. But your future does.",
-    "You don't need a new life. You need a few small habits you keep when no one is watching.",
-    "Slow progress is still progress. A step a day is a mile by spring.",
-    "Discipline is just remembering what you want more than what you feel like right now."
+    "It is not that we have a short time to live, but that we waste a lot of it.||Seneca",
+    "Small, repeated steps change your brain faster than one big leap.",
+    "Rest isn't laziness. Recovery is when growth settles in.",
+    "Compare today with yesterday's you, not someone else's highlights."
    ],
-   "caption": "Small steps, every day. That's the whole secret. 🪷\n\nWhat's one small thing you'll do today?"
+   "caption": "Your time is your life. Spend it like it. ⏳\n\nSeneca, On the Shortness of Life 1.3 (Basore translation). General psychology ideas, not medical advice."
   },
   {
    "type": "single",
-   "theme": "peace at night",
+   "theme": "starting now",
    "quotes": [
-    "You are allowed to end the day without having figured everything out."
+    "Begin at once to live, and count each separate day as a separate life.||Seneca"
    ],
-   "caption": "Put the day down. You did enough. 🌙\n\nSend this to someone who needs rest tonight."
+   "caption": "Today counts as a whole life. 🌅\n\nSeneca, Letters to Lucilius 101 (Gummere translation)."
   }
  ]
 }
