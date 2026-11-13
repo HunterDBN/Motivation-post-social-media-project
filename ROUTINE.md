@@ -31,3 +31,8 @@ Never publish anything Hunter has not approved while review mode is on.
 ## Which day to prepare
 Prepare the FIRST date, starting from tomorrow (America/Vancouver), that has no `output/<date>/published.json`.
 Days already scheduled have that file, so never rebuild or re-schedule them (that would create duplicate posts in Buffer).
+
+## Always verify the count (Hunter's rule: 4 posts every day, no exceptions)
+After scheduling, run `python -m buddha_post.verify <date>`. It lists what Buffer really holds for that day (Vancouver time).
+If any channel has fewer than 4 posts for the day, fix it (re-run `publish --post N` only for the missing slots; never re-schedule slots that exist) and re-verify.
+Buffer's web app shows times in the viewer's own timezone, so a day can look short there; trust `verify`.
