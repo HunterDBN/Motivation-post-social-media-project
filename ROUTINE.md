@@ -5,7 +5,9 @@ so Hunter has all day to review them.
 
 1. Read `config.json` and `history.json`. Pick 3-4 themes not used in the last week
    (growth, discomfort, letting go, self-worth, patience, healing, discipline, peace, solitude, change).
-2. Write `content/<tomorrow>.json`: one post per theme, 4 slides each.
+2. Write `content/<tomorrow>.json`: FOUR posts per day, in this order and mix (Hunter's rule):
+   post 1 (08:00) carousel (4 quotes), post 2 (12:00) SINGLE image (1 quote, add `"type": "single"`),
+   post 3 (17:00) carousel (4 quotes), post 4 (20:00) SINGLE image (1 quote, `"type": "single"`).
    - Quotes are ORIGINAL, 8-30 words, plain warm voice, no clichés, no fake "Buddha said" attributions.
    - Never reuse a quote in `history.json`. Slide 1 is the hook; slide 4 lands it.
    - Caption: one or two short lines plus a soft call to action (save / share / comment). Hashtags are added automatically.
