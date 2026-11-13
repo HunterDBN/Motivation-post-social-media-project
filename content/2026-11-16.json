@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "patience",
+   "quotes": [
+    "He who knows he has enough is rich.||Lao Tzu",
+    "Progress you can't see is still progress. Keep showing up.",
+    "Rest is part of the work, not a break from it.",
+    "Compare today's you with yesterday's you. Nobody else."
+   ],
+   "caption": "Enough is a quiet kind of wealth. 🌱\n\nLao Tzu, Tao Te Ching, chapter 33 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "control",
+   "quotes": [
+    "The soul becomes dyed with the color of its thoughts.||Marcus Aurelius"
+   ],
+   "caption": "Choose your thoughts with care. 🧘\n\nMarcus Aurelius, Meditations 5.16 (Hays-style translation; wording varies)."
+  },
+  {
+   "theme": "discipline",
+   "quotes": [
+    "Wish for things to happen as they do, and you will be happy.||Epictetus",
+    "Motivation follows action more often than it leads it.",
+    "Make the good habit easy and the bad habit slightly harder.",
+    "Be kind to yourself on the days you miss. Then begin again."
+   ],
+   "caption": "Peace is acceptance, practiced daily. 🔑\n\nEpictetus, Enchiridion 8 (paraphrased; translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "present",
+   "quotes": [
+    "It is not death that a man should fear, but he should fear never beginning to live.||Marcus Aurelius"
+   ],
+   "caption": "Begin to live today. 🌅\n\nMarcus Aurelius, Meditations 12.1 (commonly cited translation)."
+  }
+ ]
+}
