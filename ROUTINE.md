@@ -18,3 +18,9 @@ so Hunter has all day to review them.
 6. Record what was scheduled (the publisher writes `output/<date>/published.json`), commit and push.
 
 Never publish anything Hunter has not approved while review mode is on.
+
+## Posting mode
+`config.json` -> `posting_mode`:
+- `manual_upload` (current): no posting key is available to scheduled runs, so after step 4 the run sends Hunter
+  the slides and captions for each post (with the target time) and Hunter uploads them in Buffer / the apps. Skip step 5's publish call.
+- `buffer_api`: needs `BUFFER_API_KEY` in the run's environment and a public media URL. Not available yet.
