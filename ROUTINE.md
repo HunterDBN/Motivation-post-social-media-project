@@ -29,8 +29,19 @@ Never publish anything Hunter has not approved while review mode is on.
 - `buffer_api`: needs `BUFFER_API_KEY` in the run's environment and a public media URL. Not available yet.
 
 ## Which day to prepare
-Prepare the FIRST date, starting from tomorrow (America/Vancouver), that has no `output/<date>/published.json`.
-Days already scheduled have that file, so never rebuild or re-schedule them (that would create duplicate posts in Buffer).
+Run `python -m buddha_post.verify` first. Prepare the FIRST date, starting from tomorrow (America/Vancouver), whose Facebook count is below 4.
+If `content/<date>.json` already exists and its slides are in `output/<date>/`, do NOT rewrite it; just run `publish <date> --live`.
+`publish` is idempotent: it skips slots already in Buffer, so re-running only fills the missing ones.
+Buffer's free plan allows only 10 scheduled posts at once. If publish reports the limit, the remaining slots stay unscheduled and the next run retries them. Tell Hunter the plan limit is the cause.
+Hunter views Buffer in Da Nang time (Asia/Ho_Chi_Minh), so `verify` checks every day in both timezones.
+
+## Content style (Hunter, 2026-11-13)
+Short text on screen, 4 posts a day: 2 carousels (4 slides each) + 2 single images.
+Mix REAL old-world quotes with modern psychology insights:
+- Historic: only real, verifiable quotes (Marcus Aurelius, Seneca, Epictetus, Lao Tzu, Dhammapada...). Put the attribution on the slide with `||Name` after the quote text, and the exact source plus translation in the caption. Never invent or guess a "X said" line, and avoid famous misattributions.
+- Psychology: short paraphrased ideas (exposure, reframing, labeling feelings, nervous-system regulation, self-compassion, small habits). No fake citations or statistics. Caption notes "General psychology ideas, not medical advice."
+- Each carousel: 1 historic quote + 3 psychology slides. Singles: a historic quote.
+- Keep every slide under ~18 words. Never reuse a quote in `history.json`.
 
 ## Always verify the count (Hunter's rule: 4 posts every day, no exceptions)
 After scheduling, run `python -m buddha_post.verify <date>`. It lists what Buffer really holds for that day (Vancouver time).

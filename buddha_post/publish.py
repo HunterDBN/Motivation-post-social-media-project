@@ -37,9 +37,20 @@ def list_channels():
 CREATE = """mutation($input: CreatePostInput!) { createPost(input: $input) {
   ... on PostActionSuccess { post { id dueAt } } ... on MutationError { message } } }"""
 
+def existing(day):
+    """{(channelId, dueAt-utc-iso)} already queued in Buffer around `day`, so re-running never duplicates a slot."""
+    from datetime import timedelta
+    org = gql("{account{organizations{id}}}")["account"]["organizations"][0]["id"]
+    lo = datetime.fromisoformat(day).replace(tzinfo=ZoneInfo(CFG["timezone"])).astimezone(ZoneInfo("UTC")) - timedelta(days=1)
+    f = "%Y-%m-%dT%H:%M:%SZ"
+    edges = gql('query($o:OrganizationId!,$s:DateTime,$e:DateTime){posts(first:100,input:{organizationId:$o,filter:{dueAt:{start:$s,end:$e},status:[scheduled,sending,sent]}}){edges{node{channelId dueAt}}}}',
+                {"o": org, "s": lo.strftime(f), "e": (lo + timedelta(days=4)).strftime(f)})["posts"]["edges"]
+    return {(e["node"]["channelId"], datetime.fromisoformat(e["node"]["dueAt"].replace("Z", "+00:00")).strftime(f)) for e in edges}
+
 def main(day, live=False, only=None):
     tz = ZoneInfo(CFG["timezone"]); channels = CFG["buffer_channels"]; results = {}
     base = CFG["media_base_url"].rstrip("/")
+    have = existing(day) if live else set()
     for d in sorted((ROOT/"output"/day).glob("post-*")):
         n = int(d.name.split("-")[1])
         if only and n != only: continue
@@ -54,14 +65,20 @@ def main(day, live=False, only=None):
         if when < datetime.now(tz): sys.exit(f"{d.name}: {when} is already in the past")
         for platform, cid in channels.items():
             if not cid: continue
+            due = when.astimezone(ZoneInfo("UTC")).strftime("%Y-%m-%dT%H:%M:%SZ")
+            if (cid, due) in have: print(d.name, platform, "already scheduled, skipped"); continue
             inp = {"channelId": cid, "text": text, "schedulingType": "automatic", "mode": "customScheduled",
                    "dueAt": when.astimezone(ZoneInfo("UTC")).isoformat().replace("+00:00", "Z"),
                    "assets": [{"image": {"url": u}} for u in urls]}
             if platform == "facebook": inp["metadata"] = {"facebook": {"type": "post"}}
             if platform == "instagram": inp["metadata"] = {"instagram": {"type": "carousel" if len(urls) > 1 else "post", "shouldShareToFeed": True}}
-            r = gql(CREATE, {"input": inp})["createPost"]
-            results[f"{d.name}/{platform}"] = r; print(d.name, platform, r)
-    if live: (ROOT/"output"/day/"published.json").write_text(json.dumps(results, indent=1))
+            r = gql(CREATE, {"input": inp})["createPost"]; print(d.name, platform, r)
+            if "post" in r: results[f"{d.name}/{platform}"] = r  # only real successes are recorded
+            else: print("  NOT scheduled (e.g. Buffer plan queue limit); a later run retries this slot")
+    if live and results:
+        pj = ROOT/"output"/day/"published.json"
+        old = json.loads(pj.read_text()) if pj.exists() else {}
+        pj.write_text(json.dumps({**old, **results}, indent=1))
 
 if __name__ == "__main__":
     a = sys.argv[1:]

@@ -1,0 +1,26 @@
+{
+ "post-1/facebook": {
+  "post": {
+   "id": "6af6a5f4fb90ccefdd1fe8da",
+   "dueAt": "2026-11-14T15:00:00.000Z"
+  }
+ },
+ "post-2/facebook": {
+  "post": {
+   "id": "6af6a5f4ba218f32637f42e1",
+   "dueAt": "2026-11-14T19:00:00.000Z"
+  }
+ },
+ "post-3/facebook": {
+  "post": {
+   "id": "6af6a5f4fb90ccefdd1fe901",
+   "dueAt": "2026-11-15T00:00:00.000Z"
+  }
+ },
+ "post-4/facebook": {
+  "post": {
+   "id": "6af6a5f5c1a0010a5bff7397",
+   "dueAt": "2026-11-15T03:00:00.000Z"
+  }
+ }
+}
