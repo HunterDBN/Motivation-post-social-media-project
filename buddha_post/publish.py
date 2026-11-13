@@ -72,7 +72,7 @@ def main(day, live=False, only=None):
                    "assets": [{"image": {"url": u}} for u in urls]}
             if platform == "facebook": inp["metadata"] = {"facebook": {"type": "post"}}
             if platform == "tiktok": inp["metadata"] = {"tiktok": {"title": text.split("\n")[0][:90], "isAiGenerated": False}}
-            if platform == "instagram": inp["metadata"] = {"instagram": {"type": "carousel" if len(urls) > 1 else "post", "shouldShareToFeed": True}}
+            if platform == "instagram": inp["metadata"] = {"instagram": {"type": "post", "shouldShareToFeed": True}}
             r = gql(CREATE, {"input": inp})["createPost"]; print(d.name, platform, r)
             if "post" in r: results[f"{d.name}/{platform}"] = r  # only real successes are recorded
             else: print("  NOT scheduled (e.g. Buffer plan queue limit); a later run retries this slot")

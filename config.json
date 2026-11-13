@@ -20,10 +20,10 @@
   ],
   "publisher": "buffer",
   "buffer_channels": {
-    "facebook": "6af6976c62b70b94b014b41d",
+    "facebook": "",
     "tiktok": "6af6aaae62b70b94b01633c2",
     "threads": "6af6aa4962b70b94b0162ae4",
-    "instagram": ""
+    "instagram": "6af6b02f62b70b94b0166d20"
   },
   "media_base_url": "https://raw.githubusercontent.com/HunterDBN/Motivation-post-social-media-project/main/output",
   "posting_mode": "buffer_api",
