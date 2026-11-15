@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "healing",
+   "quotes": [
+    "Nature does not hurry, yet everything is accomplished.||Lao Tzu",
+    "Naming a feeling out loud can soften its grip.",
+    "Healing isn't a straight line. Setbacks are part of it.",
+    "Talk to yourself the way you'd talk to someone you love."
+   ],
+   "caption": "No rush. Everything in its season. 🌿\n\nLao Tzu (attributed, commonly cited from the Tao Te Ching; translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "self-worth",
+   "quotes": [
+    "You have power over your mind, not outside events. Realize this, and you will find strength.||Marcus Aurelius"
+   ],
+   "caption": "Your mind is yours. 🧘\n\nMarcus Aurelius, Meditations (commonly cited paraphrase; wording varies)."
+  },
+  {
+   "theme": "solitude",
+   "quotes": [
+    "If you wish to be loved, love.||Seneca",
+    "Loneliness often signals a need for connection, not a flaw in you.",
+    "One small check-in with someone counts.",
+    "Quiet time alone can recharge you when it's chosen, not forced."
+   ],
+   "caption": "Reach out. Return to yourself. 💛\n\nSeneca, Letters to Lucilius 9 (quoting Hecato; translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "change",
+   "quotes": [
+    "Better to conquer yourself than to win a thousand battles.||Dhammapada"
+   ],
+   "caption": "The real win is inward. 🌅\n\nDhammapada, verse 103 (translations vary)."
+  }
+ ]
+}
