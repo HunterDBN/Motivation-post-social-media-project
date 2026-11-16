@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "discipline",
+   "quotes": [
+    "While we are postponing, life speeds by.||Seneca",
+    "Waiting for the perfect moment is often fear in disguise.",
+    "Start with the smallest version of the task. Momentum does the rest.",
+    "Done imperfectly beats planned perfectly."
+   ],
+   "caption": "Start before you're ready. ⏳\n\nSeneca, Letters to Lucilius 1 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "peace",
+   "quotes": [
+    "Just as a solid rock is not shaken by the wind, the wise are not moved by praise or blame.||Dhammapada"
+   ],
+   "caption": "Steady like stone. 🪨\n\nDhammapada, verse 81 (translations vary)."
+  },
+  {
+   "theme": "self-worth",
+   "quotes": [
+    "Knowing others is intelligence; knowing yourself is true wisdom.||Lao Tzu",
+    "Notice your patterns without judging them. Awareness comes first.",
+    "Your needs aren't a burden. Saying them out loud is a skill.",
+    "Know yourself, then be gentle with what you find."
+   ],
+   "caption": "Look inward. 🌿\n\nLao Tzu, Tao Te Ching ch. 33 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "growth",
+   "quotes": [
+    "The best revenge is not to be like your enemy.||Marcus Aurelius"
+   ],
+   "caption": "Rise above. 🧘\n\nMarcus Aurelius, Meditations 6.6 (translations vary)."
+  }
+ ]
+}

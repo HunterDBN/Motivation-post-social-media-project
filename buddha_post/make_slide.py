@@ -26,6 +26,8 @@ def make(bg_path, quote, out, side="left"):
     # text column on the opposite side
     col_x0 = int(W*0.40) if side == "left" else int(W*0.05)
     col_w = int(W*0.55)
+    scrim = Image.new("RGBA", img.size, (0,0,0,0)); ImageDraw.Draw(scrim).rectangle((col_x0-10, int(H*0.15), col_x0+col_w+10, int(H*0.65)), fill=(0,0,0,70))
+    img = Image.alpha_composite(img, scrim.filter(ImageFilter.GaussianBlur(60)))
     d = ImageDraw.Draw(img)
     for size in range(64, 28, -2):
         f = ImageFont.truetype(FONT, size)
