@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "discipline",
+   "quotes": [
+    "Difficulties strengthen the mind, as labor does the body.||Seneca",
+    "Discomfort you can tolerate is how capacity grows.",
+    "Do the hard thing in small doses, repeatedly.",
+    "Confidence follows evidence. Collect some today."
+   ],
+   "caption": "Strength is built, not found. 💪\n\nSeneca, Moral Letters 78 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "growth",
+   "quotes": [
+    "Sometimes even to live is an act of courage.||Seneca"
+   ],
+   "caption": "Showing up counts. 🕊️\n\nSeneca, Moral Letters 78 (translations vary)."
+  },
+  {
+   "theme": "peace",
+   "quotes": [
+    "Health is the greatest gift, contentment the greatest wealth.||Dhammapada",
+    "Rest is productive. Your nervous system needs it to function.",
+    "Comparison quietly turns what you have into what you lack.",
+    "Name three things that are already enough today."
+   ],
+   "caption": "Enough is a feeling you can practice. 🌾\n\nDhammapada, verse 204 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "self-worth",
+   "quotes": [
+    "If you want to improve, be content to be thought foolish and stupid.||Epictetus"
+   ],
+   "caption": "Growth starts with being a beginner. 🌱\n\nEpictetus, Enchiridion 13 (translations vary)."
+  }
+ ]
+}
