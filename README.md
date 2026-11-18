@@ -1,7 +1,6 @@
 # Buddha motivation posts
 
-Makes 3-4 carousel posts a day (4 slides each) featuring the Buddha character on simple
-public-domain photo backgrounds, and schedules them through Buffer to Instagram, Facebook and TikTok.
+Makes 6 feed posts a day (3 carousels, 3 singles) + 10 Instagram stories, scheduled through Buffer to Instagram, TikTok and Threads (stories: Instagram only).
 
 - `assets/buddha.png` — the character (transparent PNG). Used as-is, so he never changes.
 - `backgrounds/` — 40 CC0 / public-domain photos; sources and licenses in `credits.json`.

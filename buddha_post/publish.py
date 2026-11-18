@@ -18,6 +18,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 CFG = json.loads((ROOT/"config.json").read_text())
+CFG["media_base_url"] = os.environ.get("MEDIA_BASE_URL") or CFG["media_base_url"]  # override to test from a branch
 API = "https://api.buffer.com"
 
 def gql(query, variables=None):

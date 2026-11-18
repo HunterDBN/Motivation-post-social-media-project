@@ -36,7 +36,8 @@ def pool(day):
     bank = json.loads((ROOT/"content"/"bank.json").read_text())
     for r in bank["real"]: items.setdefault(norm(r["q"]+"||"+r["by"]), r["q"]+"||"+r["by"])
     for m in bank["modern"]: items.setdefault(norm(m), m)
-    return items
+    # never show a quote as a story while it is fresh in the feed (used in the last 3 days or later)
+    return {k: v for k, v in items.items() if hist["quotes"].get(k, "0") <= cutoff}
 
 def main(day):
     n = CFG["stories"]["per_day"]; times = CFG["stories"]["times"][:n]

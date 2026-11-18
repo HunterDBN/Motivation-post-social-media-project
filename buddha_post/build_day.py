@@ -27,10 +27,12 @@ def main(day):
     bgs = sorted(p.name for p in (ROOT/"backgrounds").glob("*.jpg"))
     pool = [b for b in bgs if b not in recent_bg] or bgs
     random.seed(day); random.shuffle(pool)
-    dupes = [q for p in spec["posts"] for q in p["quotes"] if norm(q) in used_q]
-    if dupes: sys.exit(f"Already-posted quotes, rewrite them: {dupes}")
     out_day = ROOT/"output"/day
-    for i, post in enumerate(spec["posts"], 1):
+    # already-rendered posts (their quotes are in history) are left untouched, so a day can be extended
+    todo = [(i, p) for i, p in enumerate(spec["posts"], 1) if not (out_day/f"post-{i}"/"meta.json").exists()]
+    dupes = [q for _, p in todo for q in p["quotes"] if norm(q) in used_q]
+    if dupes: sys.exit(f"Already-posted quotes, rewrite them: {dupes}")
+    for i, post in todo:
         d = out_day/f"post-{i}"; d.mkdir(parents=True, exist_ok=True)
         side = "left" if i % 2 else "right"
         for k, q in enumerate(post["quotes"], 1):
