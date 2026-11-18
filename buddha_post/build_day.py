@@ -39,7 +39,7 @@ def main(day):
             hist["quotes"][norm(q)] = day; hist["backgrounds"][bg] = day
         tags = " ".join(CFG["hashtags"])
         (d/"caption.txt").write_text(post["caption"].strip() + "\n\n" + tags + "\n")
-        (d/"meta.json").write_text(json.dumps({"theme": post.get("theme"), "time": CFG["post_times"][i-1] if i <= len(CFG["post_times"]) else None}))
+        (d/"meta.json").write_text(json.dumps({"theme": post.get("theme"), "time": post.get("time") or (CFG["post_times"][i-1] if i <= len(CFG["post_times"]) else None)}))
         print("rendered", d)
     HIST.write_text(json.dumps(hist, indent=1))
 
