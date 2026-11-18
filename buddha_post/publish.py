@@ -8,6 +8,7 @@ and the day's output pushed before running --live).
 Usage:
   python -m buddha_post.publish --list-channels          # find channel ids for config.json
   python -m buddha_post.publish 2026-11-14 [--live] [--post N]
+Add --stories to schedule that day's Instagram stories instead (output/DATE/stories/).
 Dry run unless --live. Writes output/DATE/published.json.
 """
 import json, os, sys, urllib.request
@@ -17,6 +18,7 @@ from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
 CFG = json.loads((ROOT/"config.json").read_text())
+CFG["media_base_url"] = os.environ.get("MEDIA_BASE_URL") or CFG["media_base_url"]  # override to test from a branch
 API = "https://api.buffer.com"
 
 def gql(query, variables=None):
@@ -81,7 +83,33 @@ def main(day, live=False, only=None):
         old = json.loads(pj.read_text()) if pj.exists() else {}
         pj.write_text(json.dumps({**old, **results}, indent=1))
 
+def stories(day, live=False, only=None):
+    """Schedule the day's 10 Instagram stories (type=story). Stories use Buffer's separate story limit,
+    not the 10-post queue. Idempotent like main(). Slots already in the past are skipped."""
+    tz = ZoneInfo(CFG["timezone"]); cid = CFG["buffer_channels"][CFG["stories"]["channel"]]
+    base = CFG["media_base_url"].rstrip("/"); d = ROOT/"output"/day/"stories"
+    times = json.loads((d/"meta.json").read_text())["times"]
+    have = existing(day) if live else set(); results = {}; f = "%Y-%m-%dT%H:%M:%SZ"
+    for n, t in enumerate(times, 1):
+        if only and n != only: continue
+        hh, mm = map(int, t.split(":"))
+        when = datetime.fromisoformat(day).replace(hour=hh, minute=mm, tzinfo=tz)
+        if not live: print(f"[dry run] story-{n} at {when:%Y-%m-%d %H:%M %Z}"); continue
+        if when < datetime.now(tz): print(f"story-{n}: {when:%H:%M} already past, skipped"); continue
+        due = when.astimezone(ZoneInfo("UTC")).strftime(f)
+        if (cid, due) in have: print(f"story-{n}", "already scheduled, skipped"); continue
+        inp = {"channelId": cid, "text": "", "schedulingType": "automatic", "mode": "customScheduled", "dueAt": due,
+               "assets": [{"image": {"url": f"{base}/{day}/stories/story-{n}.jpg"}}],
+               "metadata": {"instagram": {"type": "story", "shouldShareToFeed": False}}}
+        r = gql(CREATE, {"input": inp})["createPost"]; print(f"story-{n}", r)
+        if "post" in r: results[f"stories/story-{n}"] = r
+    if live and results:
+        pj = ROOT/"output"/day/"published-stories.json"
+        old = json.loads(pj.read_text()) if pj.exists() else {}
+        pj.write_text(json.dumps({**old, **results}, indent=1))
+
 if __name__ == "__main__":
     a = sys.argv[1:]
     if "--list-channels" in a: list_channels()
+    elif "--stories" in a: stories(a[0], "--live" in a, int(a[a.index("--post")+1]) if "--post" in a else None)
     else: main(a[0], "--live" in a, int(a[a.index("--post")+1]) if "--post" in a else None)

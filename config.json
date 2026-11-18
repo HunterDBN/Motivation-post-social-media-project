@@ -2,7 +2,9 @@
   "timezone": "America/Vancouver",
   "post_times": [
     "08:00",
+    "10:00",
     "12:00",
+    "15:00",
     "17:00",
     "20:00"
   ],
@@ -27,5 +29,30 @@
   },
   "media_base_url": "https://raw.githubusercontent.com/HunterDBN/Motivation-post-social-media-project/main/output",
   "posting_mode": "buffer_api",
-  "view_timezone": "Asia/Ho_Chi_Minh"
+  "view_timezone": "Asia/Ho_Chi_Minh",
+  "post_types": [
+    "carousel",
+    "single",
+    "carousel",
+    "single",
+    "carousel",
+    "single"
+  ],
+  "posts_per_day": 6,
+  "stories": {
+    "per_day": 10,
+    "channel": "instagram",
+    "times": [
+      "07:00",
+      "08:30",
+      "10:00",
+      "11:30",
+      "13:00",
+      "14:30",
+      "16:00",
+      "17:30",
+      "19:00",
+      "21:00"
+    ]
+  }
 }
