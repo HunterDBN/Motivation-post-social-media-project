@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "patience",
+   "quotes": [
+    "Can you wait until the mud settles and the water is clear?||Lao Tzu",
+    "Progress is usually invisible while it is happening.",
+    "Small effort repeated beats big effort once.",
+    "Judge the week, not the day."
+   ],
+   "caption": "Slow is still moving. 🌿\n\nLao Tzu, Tao Te Ching 15 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "letting go",
+   "quotes": [
+    "Overcome anger with non-anger; overcome evil with good.||Dhammapada"
+   ],
+   "caption": "Let the heat pass. 🕊️\n\nDhammapada, verse 223 (translations vary)."
+  },
+  {
+   "theme": "solitude",
+   "quotes": [
+    "Withdraw into yourself, as far as you can.||Seneca",
+    "Quiet time is when your mind sorts the day.",
+    "You do not need to fill every silence.",
+    "Sit alone for five minutes today. Notice what shows up."
+   ],
+   "caption": "Learn to be good company for yourself. 🌙\n\nSeneca, Moral Letters 7 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "change",
+   "quotes": [
+    "Happiness follows a pure mind like a shadow that never leaves.||Dhammapada"
+   ],
+   "caption": "Peace is practiced. 🌾\n\nDhammapada, verse 2 (translations vary)."
+  }
+ ]
+}
