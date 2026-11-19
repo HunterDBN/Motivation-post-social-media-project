@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "discipline",
+   "quotes": [
+    "Life is long if you know how to use it.||Seneca",
+    "Action often creates the motivation, not the other way around.",
+    "Start for two minutes. Momentum does the rest.",
+    "Make the next step so small it feels silly to skip."
+   ],
+   "caption": "Begin small, begin now. ⏳\n\nSeneca, On the Shortness of Life 2 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "peace",
+   "quotes": [
+    "Very little is needed to make a happy life; it is all within yourself.||Marcus Aurelius"
+   ],
+   "caption": "Less is enough. 🌿\n\nMarcus Aurelius, Meditations 7.67 (translations vary)."
+  },
+  {
+   "theme": "healing",
+   "quotes": [
+    "The journey of a thousand miles begins beneath one's feet.||Lao Tzu",
+    "Naming a feeling out loud can lower its intensity.",
+    "Talk to yourself the way you would talk to a friend.",
+    "Healing is rarely a straight line. That is normal."
+   ],
+   "caption": "Be gentle with the process. 🌙\n\nLao Tzu, Tao Te Ching 64 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "self-worth",
+   "quotes": [
+    "Oneself indeed is one's own refuge.||Dhammapada"
+   ],
+   "caption": "You can be your own steady ground. 🕊️\n\nDhammapada, verse 160 (translations vary)."
+  }
+ ]
+}
