@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "gratitude",
+   "quotes": [
+    "Love the people fate brings you, with all your heart.||Marcus Aurelius",
+    "Specific gratitude works better than vague gratitude. Name one thing and why.",
+    "Before bed, notice one small good thing from today.",
+    "Attention is trainable. Point it at what is going right."
+   ],
+   "caption": "Notice what is already here. 🌅\n\nMarcus Aurelius, Meditations 6.39 (paraphrased from translations that vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "patience",
+   "quotes": [
+    "Hold every hour in your grasp.||Seneca"
+   ],
+   "caption": "Today is the one you can touch. ⏳\n\nSeneca, Letters to Lucilius 1 (translations vary)."
+  },
+  {
+   "theme": "discomfort",
+   "quotes": [
+    "Difficulties show men what they are.||Epictetus",
+    "Stress means it matters to you. It does not mean you are failing.",
+    "Rest is part of the plan, not a reward for finishing it.",
+    "Ask: what is in my control right now? Start there."
+   ],
+   "caption": "Hard days reveal strength. 🔥\n\nEpictetus, Discourses 1.24 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "peace",
+   "quotes": [
+    "All that we are is the result of what we have thought.||Dhammapada"
+   ],
+   "caption": "Mind first, life follows. 🪷\n\nDhammapada, verse 1 (translations vary)."
+  }
+ ]
+}
