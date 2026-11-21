@@ -1,0 +1,40 @@
+{
+ "posts": [
+  {
+   "theme": "self-worth",
+   "quotes": [
+    "Better than a thousand hollow words is one word that brings peace.||Dhammapada",
+    "Talk to yourself the way you would talk to a friend you care about.",
+    "A bad day is an event. It is not a verdict on who you are.",
+    "Progress counts even when it is small and quiet."
+   ],
+   "caption": "Peace can start with one kind word, even to yourself. 🌿\n\nDhammapada, verse 100 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "letting go",
+   "quotes": [
+    "If you realize you have enough, you are truly rich.||Lao Tzu"
+   ],
+   "caption": "Enough is a quiet kind of wealth. 🍃\n\nLao Tzu, Tao Te Ching ch. 33 (translations vary)."
+  },
+  {
+   "theme": "discipline",
+   "quotes": [
+    "It is not things that disturb us, but our judgments about them.||Epictetus",
+    "Make the habit so small you cannot say no. Then repeat it.",
+    "Waiting to feel ready is a trap. Begin, and readiness follows.",
+    "Decide the next step in advance, so tired-you does not have to."
+   ],
+   "caption": "Change the judgment, change the day. 🔥\n\nEpictetus, Enchiridion 5 (translations vary). General psychology ideas, not medical advice."
+  },
+  {
+   "type": "single",
+   "theme": "peace",
+   "quotes": [
+    "He suffers more than necessary who suffers before it is necessary.||Seneca"
+   ],
+   "caption": "Do not rent space to tomorrow's worries. 🌅\n\nSeneca, Letters to Lucilius 98 (translations vary)."
+  }
+ ]
+}
